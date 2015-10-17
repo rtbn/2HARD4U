@@ -1,0 +1,56 @@
+﻿Projet 2HARD4U
+
+	
+Cadrage du projet « 2HARD4U »
+
+	I) Définition du projet
+
+	Le projet 2HARD4U se présent sous la forme d'un jeu qu'on affichera dans le terminal. Le but étant simple (à comprendre), il faut déplacer son personnage dans un labyrinthe afin de chercher une clé qui permettra d'ouvrir une porte se trouvant à l'autre bout du labyrinthe, le tout sans se faire éliminer par le monstre. Il y aura une gestion de temps, de scores, de pseudos, sauvegardes et chargements.
+	
+
+	II) Caractéristiques essentielles 
+
+- Il s'agit de programmer un jeu fonctionnel permettant à un joueur de se déplacer dans un labyrinthe créé aléatoirement en fonction de la difficulté qu'il choisit. Une gestion des sauvegardes et des chargements sera mis en place, ainsi qu'une gestion des scores.
+
+
+Les Objectifs
+
+	I) Technique
+
+- Les principaux points techniques sont la gestion de la sauvegarde de la partie, ainsi que le chargement, une gestion aléatoire du labyrinthe parfait ( Parfait : De n'importe qu'elle endroit du labyrinthe on peut accéder à n'importe qu'elle autre endroit) , ainsi que ça résolution avec le plus court chemin.
+
+- Les autres points, secondaire, seront la mise en place de « monstres » qui selon leur position iront vers la clé, la porte ou le Héros.
+- Une gestion du temps, une prise en compte de « cheat code » permettant selon le code rentré de finir le jeu plus ou moins aisément.
+- La mise en place d'une librairie graphique : SDL. 
+
+	II) Délais
+
+- Nous avons 3 mois pour réaliser ce projet, avec à notre disposition 15 séances de 3h de projet.
+- La date de rendu de projet est fixée au jeudi 05 Janvier 2013 (si on meurt pas le 21 décembre 2012)
+
+
+ La technique :
+
+Notre projet s'appuie sur le langage C. Nous avons  eu l'idée de ce dernier en nous inspirant d'un projet existant : « La vie dans un labyrinthe », puis en modifiant quelques éléments (Car on nous a volé ce projet).
+Les difficultés principales sont de pouvoir gérer les déplacements d'un héros au sein d'un labyrinthe généré aléatoirement. Il faut aussi faire en sorte qu'un monstre se dirige vers le joueur en empruntant le plus court chemin. Puis il faut enfin sauvegarder et charger une partie courante.
+
+
+Les moyens :
+ 
+- L'équipe projet est constitué de la DREAM TEAM, alias Anice Khomany (Vice-hef de projet) et Rémi Tremblain (Chef de projet).
+
+- Rémi Tremblain s'occupera de la programmation dynamique et aléatoire du labyrinthe, du moteur, de la sauvegarde et chargement, de la difficulté et de la gestion de partie.
+
+- Anice Khomany s'occupera du menu des options, crédits, du makefile, de la génération de document extérieur, et de la mise en place Redmine et de Git. 
+La communication
+
+- La communication dans l'équipe c'est effectué par client Mail, SMS, Git et meeting (souvent opéré dans les couloirs ou les salles de classe)
+
+ 
+ 
+Diagramme de tâches (WBS) :
+
+
+
+ 
+

@@ -1,0 +1,336 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fswiss\fcharset0 ArialMT;\f2\froman\fcharset0 TimesNewRomanPSMT;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18300\viewh16980\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\fs32 \cf0 17/10/12\
+\
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1\b\fs24 \cf0 Sujet \'a0: 2Hard4U
+\f0\b0\fs32 \
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1\b\fs24 \cf0 \ul \ulc0 R\'e8gles\ulnone  :
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 	L\'92utilisateur doit passer au niveau suivant en passant par une porte qu\'92il doit ouvrir \'e0 l\'92aide d\'92une cl\'e9 qu\'92il obtiendra en navigant dans le labyrinthe. Tout ceci en \'e9vitant les monstres se d\'e9pla\'e7ant dans ce dernier.
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Plusieurs niveaux avec difficult\'e9 croissante :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	- 1,
+\f0\b0\fs32 \
+
+\f1\b\fs24 	- 2,
+\f0\b0\fs32 \
+
+\f1\b\fs24 	- 3 ,...
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Monstres avec un comportement \'e9volutif
+\f0\b0\fs32 \
+\pard\pardeftab720\fi960\ql\qnatural
+
+\f1\b\fs24 \cf0 -p\'e9rim\'e8tre de d\'e9tection	
+\f0\b0\fs32 \
+
+\f1\b\fs24 -vitesse qui augmente
+\f0\b0\fs32 \
+\pard\pardeftab720\ql\qnatural
+
+\f1\b\fs24 \cf0 	-chemin le plus court vers P1
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Pr\'e9vision du d\'e9placement
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Mise en place des labyrinthes :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	
+\f0\b0\fs32 \
+
+\f1\b\fs24 	- G\'e9n\'e9ration al\'e9atoire,\
+	- Murs,\
+	- Monstres,\
+	- Cl\'e9,\
+	- Porte.
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Bonus (?) :\
+\
+	- Super vitesse,\
+	- Invuln\'e9rabilit\'e9,\
+	- ...
+\f0\b0\fs32 \
+\
+\
+
+\f1\b\fs24 Interface : 
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Score
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Vie
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-lvl
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-temps
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 id\'e9es : 
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Fonction pause
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Fonction charg\'e9/sauv\'e9
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Table de score avec pseudo, temps et score
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Classement meilleur score
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Chuck Norris en premier, puis nous, puis les autres
+\f0\b0\fs32 \
+
+\f1\b\fs24 	(- Mot de passe \'e0 la fin de chaque niveau.)
+\f0\b0\fs32 \
+\
+\
+\
+\
+\
+\
+
+\f1\b\fs24 D\'e9roulement du jeu : 
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Ecran principale :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Nouveau jeu
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Charger le jeu
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Meilleur score
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Option 
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Nouveau jeu :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Entrer nom
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Reprendre un niveau avec le mot de passe
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-G\'e9n\'e9ration du labyrinthe
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Affichage des donn\'e9es (pseudo, niveau, temps, score)
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-G\'e9n\'e9ration des monstres/pi\'e8ges
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-G\'e9n\'e9ration du personnage
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Charger le jeu :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-en fonction des diff\'e9rents pseudo
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-fichier .lvl
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Meilleur score : 
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-Classement et affichage des meilleurs scores, temps, niveau et pseudo (R\'e8gle de Chuck et P)
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-calcul \'e0 effectuer (en fonction du temps ? \'e0 revoir)
+\f0\b0\fs32 \
+\
+
+\f1\b\fs24 Option :
+\f0\b0\fs32 \
+
+\f1\b\fs24 	- Gestion couleur (\'e0 revoir avec le SDL)
+\f0\b0\fs32 \
+
+\f1\b\fs24 	-\'c0 propos..
+\f0\b0\fs32 \
+\
+\
+
+\f1\b\fs24 Repr\'e9sentation des donn\'e9es : Structure de Matrice 
+\f0\b0\fs32 \
+\
+\
+\
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs24 \cf0 22/10/12
+\f0\fs32 \
+\
+
+\f1\fs24  
+\f0\fs32 \
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1\fs38 \cf0 Algorithme de haut niveau :
+\f0\fs32 \
+\
+\pard\pardeftab720\fi960\ql\qnatural
+
+\f1\fs30 \cf0  - Cr\'e9ation du menu
+\f0\fs32 \
+
+\f1\fs30 - Navigation dans le menu
+\f0\fs32 \
+
+\f1\fs30 - G\'e9n\'e9ration al\'e9atoire du labyrinthe (semi-al\'e9atoire ?)
+\f0\fs32 \
+
+\f1\fs30 - Gestion du temps, calcul du score \'e0 la mario (en fonction du temps restant)
+\f0\fs32 \
+
+\f1\fs30 - Gestion des coordonn\'e9es
+\f0\fs32 \
+
+\f1\fs30 - Placement des monstres/objets/porte/cl\'e9/joueur
+\f0\fs32 \
+
+\f1\fs30 - Gestion du niveau du jeu, moins en moins de possibilit\'e9 de chemin, monstres plus rapides, p\'e9rim\'e8tre de d\'e9tection plus large
+\f0\fs32 \
+
+\f1\fs30 - Trailer
+\f0\fs32 \
+
+\f1\fs30 - Tutoriel
+\f0\fs32 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\fi960\ql\qnatural
+
+\f1\fs30 \cf0 - Calcul des trajectoires les plus courtes
+\f0\fs32 \
+
+\f1\fs30 - Mod\'e9lisation des cellules de d\'e9placement plut\'f4t que les murs 
+\f0\fs32 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\li960\ql\qnatural
+
+\f1\fs30 \cf0 - Sauvegarde : Lecture ligne par ligne, et \'e9criture dans un fichier portant comme nom le pseudo du joueur
+\f0\fs32 \
+\pard\pardeftab720\fi960\ql\qnatural
+
+\f1\fs30 \cf0 - Chargement : transcription du fichier de sauvegarde portant le pseudo du joueur
+\f0\fs32 \
+
+\f1\fs30 - Gestion des touches pour bouger/tirer ?
+\f0\fs32 \
+
+\f1\fs30 - \'c9limination des monstres (vie, ralentissement quand faible,...) \'a0\'a0
+\f0\fs32 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\
+\pard\pardeftab720\ql\qnatural
+
+\f1\i\b\fs30 \cf2 \ul \ulc2 1\'e8re \'e9tape : Cr\'e9ation d\'92un labyrinthe FAIT 
+\f0\i0\b0\fs32 \cf0 \ulnone \
+\
+
+\f1\i\b\fs30 \cf2 \ul R\'e9mi est sur le coup
+\f0\i0\b0\fs32 \cf0 \ulnone \
+
+\f1\i\b\fs30 \cf2 \ul Anice is in the BUILDIIIIIING
+\f0\i0\b0\fs32 \cf0 \ulnone \
+\
+\pard\pardeftab720\qj
+
+\f1\fs30 \cf0 Une cellule sera cod\'e9e sur 1 char.
+\f0\fs32 \
+
+\f1\fs30 On nomme Nord, Ouest, Sud et Est les quatre portes.
+\f0\fs32 \
+
+\f1\fs30 Nord sera le bit 0, Ouest le 3, Sud le 2, et Est le 1.
+\f0\fs32 \
+
+\f1\fs30 L'\'e9tat, visit\'e9 ou non sera cod\'e9 sur le bit 4.
+\f0\fs32 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\pard\pardeftab720\qj
+
+\f1\fs30 \cf0 La structure du labyrinthe contiendra 2 entiers m et n, les dimensions de ce dernier. L'entr\'e9e et la sortie, cod\'e9es indiff\'e9remment par leur indice dans le tableau ou par des pointeurs sur les cellules.
+\f0\fs32 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+\
+\
+\
+\
+\pard\pardeftab720\ql\qnatural
+
+\f2 \cf0 R\'e9mi : 
+\f0 \
+
+\f2 	- Mise en place du syst\'e8me de pseudo
+\f0 \
+
+\f2 	- Programmation de la difficult\'e9e
+\f0 \
+
+\f2 	- MakeFile\
+	- G\'e9n\'e9ration dynamique labyrinthe\
+	- Cr\'e9ation biblioth\'e8que\
+	- Mise \'e0 jour Sauvegarde/Chargement\
+	- Menu\
+	- Moteur\
+	- New Game\
+\
+\
+Anice :\
+	- V\'e9rification pr\'e9sence r\'e9pertoire\
+	- Sauvegarde/Chargement\
+	- Cr\'e9dits\
+	- Options\
+	- Mise en place Redmine\
+	- Mise en place Git}
